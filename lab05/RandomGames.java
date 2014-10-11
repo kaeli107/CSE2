@@ -36,14 +36,44 @@ myScanner=new Scanner( System.in );
 String game=myScanner.next();
 
     if (game.length()>1){
-        System.out.println("single character expected")
-    
+        System.out.println("single character expected");
     }
-    else{
-        game1=game.charAt(0);
-        
+    
+//For Roulette
+
+    if(game.equals("R") || game.equals("r")){
+            int number=0 + (int) (Math.random()*37);
+            if (number==37){
+                System.out.println("roulette= 00");
+            }
+            else{
+                System.out.println("roulette= "+number);
+            }
+            
+                if (number==0 || number==37){
+                    System.out.println("blue");
+                }
+                else if (number % 2 == 0){
+                    System.out.println("black");
+                }
+                else{
+                    System.out.println("red");
+                }
+    }
+    
+//For Craps
+    
+    if(game.equals("C") || game.equals("c")){
+        int roll1=0 + (int) (Math.random()*6);
+        int roll2=0 + (int) (Math.random()*6);
+        int total= roll1+roll2;
+        System.out.println("Picking a card option is yet to be implemented");
     }
 
+//For Pick a Card
+    if(game.equals("P") || game.equals("p")){
+        System.out.println("Picking a card option is yet to be implemented");
+    }
 
     }  //end of main method   
 } //end of class
