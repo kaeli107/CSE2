@@ -148,6 +148,3 @@ mealchoice=user_input.nextLine();
     }  //end of main method
 } //end of class
 
-
-//ISSUES: will still compile and move on if I have B(, B;, etc. it doesn't only take a solid b
-//also don't have it saying that only one String is expected

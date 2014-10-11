@@ -38,10 +38,10 @@ myScanner=new Scanner( System.in );
 int nBigMacs = myScanner.nextInt();
 
     if (nBigMacs < 0) {
-        System.out.println("You did not enter an int");
-        
+        System.out.println("You did not enter an int > 0");
+    return;    
     }
-    
+
 
 double allBigMacs= nBigMacs*2.22;
 
@@ -51,29 +51,26 @@ double allBigMacs= nBigMacs*2.22;
         (Math.round(100*allBigMacs))/100.00+" ");
    
    }
-   
-   
- if (nBigMacs < 0) {
-        System.out.println("You did not enter an int");
-        
-    }
+  
+//create string for fries input
+String fries;
 
 //Ask user if they want fries
     System.out.print(
-        "Do you want an order of fries (Y/y/N/n)?");
-
-Scanner reader = new Scanner(System.in);
+        "Do you want an order of fries (Y/y/N/n)? ");
 
 //Accept user input
-char fries = reader.next().charAt(0);
+fries = myScanner.next();
 
-        if (fries=="Y"|| fries=="y") {
+        if (fries.equals("Y") || fries.equals("y")) {
             System.out.println(
             "You ordered fries at a cost of $2.15");
+            System.out.println(
+            "The total cost of the meal is $"+((Math.round(100*allBigMacs+2.15))/100.00)+"");
      
     }
  
-       else if (fries=="N"|| fries=="n") {
+       else if (fries.equals("N") || fries.equals("n")) {
             System.out.println(
             "The total cost of the meal is $"+(Math.round(100*allBigMacs))/100.00+"");
      
