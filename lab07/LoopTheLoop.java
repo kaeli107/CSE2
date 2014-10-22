@@ -1,6 +1,6 @@
 //Kaeli Prevelige
 //October 10, 2014
-//Lab 7
+//Lab 07
 //CSE2
 //LoopTheLoop Java Program
 //

@@ -32,7 +32,7 @@ public class Enigma1{
  *        acceptable input don't produce the correct answer?
  * 
  * 
- * 
+ * NOT DONE
  * 
  */
 

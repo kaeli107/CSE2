@@ -15,10 +15,10 @@ public class Enigma2{
 /*
  * Error Report: Explain how you can use the java.lang exception to
  *     identify the runtime error in the above code
- * 
- * 
- * 
- * 
- * 
+ * You can use the java.lang exception to identify the error because
+ * it tells you that the error is Arithmetic Exception. It also says you 
+ * divided by zero where you shouldn't be able to, so you go back
+ * to the program and find where there is an issue (40/0) and you can then
+ * figure out how to fix the issue.
  */
 
