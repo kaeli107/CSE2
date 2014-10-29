@@ -11,12 +11,12 @@
 
 
 //Tell scanner you're creating an instance that
-//  will take input from STDIN
-Scanner user_input = new Scanner( System.in );
-import java.util.Scanner;
+//  will take input from STDINimport java.util.Scanner;
 public class MoreLoops{
     public static void main(String[] arg){
 	Scanner scan=new Scanner(System.in);
+//------------------------------------------------------------------      
+
 	int n=0;
 
 	System.out.print("Enter an int- ");
@@ -24,31 +24,30 @@ public class MoreLoops{
 	    scan.next(); //get rid of the junk entered by user
 	    System.out.print("You did not enter an int; try again- ");
 	}
+	
+//My Program:
+int n=0;
+    System.out.print("Enter an int- "); //have user enter an int
+do{
+    scan.next();
+    System.out.print("You did not enter an int; try again- "); 
+    // if int not entered, ask user to try again
+}while (!scan.hasNextInt());
+
 	//COMMENT OUT THE ABOVE 5 LINES AND REPLACE THE CODE WITH A 
 	//DO-WHILE LOOP
+//-----------------------------------------------------------------
+ 
         n=scan.nextInt();
-
 	for(int j=0;j<n && j<40;j++){
 	    for(int k=0;k<j+1;k++){
 		System.out.print('*');
 	    }
 	    System.out.println();
 	}
-
-//My version: have to initialize n at some point
-
-while (j<n && j<40){
-    for(j<n && j<40)
-        j++;
-	    for(int k=0;k<j+1;k++){
-		System.out.print('*');
-	    }
-	    System.out.println();
-	}
-	
 	//COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
 	//WHILE STATEMENTS
-      
+//------------------------------------------------------------------      
 	int k=4;
 
 	do{
@@ -58,7 +57,7 @@ while (j<n && j<40){
          while(k<4);
         //COMMENT OUT THE ABOVE FIVE LINES AND REPLACE THE CODE
 	//WITH A WHILE LOOP
-
+//------------------------------------------------------------------      
         int count=0;
         while(true){
 	    switch(n){

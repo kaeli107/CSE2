@@ -93,11 +93,6 @@ public class NumberStack {
             do {
                 int i = 0;
                 do {
-                    int column = 1;
-                    do {
-                        System.out.print(" ");
-                        column++;
-                    } while (column <= number - row1);
                     System.out.println();
                     i++;
                     int dig = 1;
@@ -105,6 +100,11 @@ public class NumberStack {
                         System.out.print(row1 + "");
                         dig++;
                     } while (dig <= 2 * row1 - 1);
+                    int column = 1;
+                    do {
+                        System.out.print(" ");
+                        column++;
+                    } while (column <= number - row1);
                 } while (i < number + (row1 - number));
                 int column = 1;
                 do {

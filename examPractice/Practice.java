@@ -17,58 +17,72 @@ import java.util.Scanner;
 public class Practice {
     //  main method required for every java program
     public static void main(String[] args) {
-        //declare and instance of the scanner object
+        //declare an instance of the scanner object
         Scanner myScanner;
         //Tell scanner you're creating an instance that
         //  will take input from STDIN
-        Scanner user_input = new Scanner( System.in );
-        
-        System.out.print("Enter a number between 1 and 9- ");
-        int number= user_input.nextInt();
-
-        if (number<1 || number>9){
-                System.out.println("You did not enter a number between 1 and 9");
-                return;
-        }
-                
-//Do-While Program
-  
-int row=1;
-do{
-    int i=0;
-    do{
-        int column=1;
-        do{
-            System.out.print(" ");
-            column++;   
-        } while(column<=number-row);
-            System.out.println();
-            i++;
-        int dig=1;
-        do{
-            System.out.print(row+"");
-            dig++;
-        } while(dig<=2*row-1);
-    } while(i<number+(row-number));
-    int column=1;
-    do{
-        System.out.print(" ");
-        column++;
-    } while(column<=number-row);
-    int dig=1;
-    System.out.println(" ");
-    do{
-        System.out.print("-");
-        dig++;
-         System.out.print("");
-    } while(dig<=2*row-1);
-        row++;
-} while (row<=number);
-System.out.println();
-
-
+        Scanner scan = new Scanner( System.in );
  
+ System.out.print("Enter an int- ");       
+ int n=scan.nextInt();
+int j=0;
+int k=0;
+while(j<n && j<40){
+    while(k<(j+1)){
+    System.out.print('*');
+    k++;
+    }
+    System.out.println();
+}
 
+
+
+//	for(int j=0;j<n && j<40;j++){
+//	    for(int k=0;k<j+1;k++){
+//		System.out.print('*');
+//	    }
+//	    System.out.println();
+//	}
+	//COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
+	//WHILE STATEMENTS
+	
     }  //end of main method   
 } //end of class
 
+SAMPLE RUNS:
+Enter 'C' or 'c' to continue, anything else to quit- 7
+You did not enter a character from the list 'Cc'; try again- ths
+You should enter exactly one character- c
+You entered 'c'
+Enter 'y', 'Y', 'n', or 'N'- r
+You did not enter a character from the list 'yYnN'; try again- r
+You did not enter a character from the list 'yYnN'; try again- r
+You did not enter a character from the list 'yYnN'; try again- r
+You did not enter a character from the list 'yYnN'; try again- r
+You did not enter a character from the list 'yYnN'; try again-
+You failed after 5 tries
+Choose a digit.
+Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'- yu
+Enter exactly one character
+Choose a digit.
+Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'- u
+You did not enter an acceptable character
+Choose a digit.
+Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'- 2
+You entered '2’
+-----------------------
+Enter 'C' or 'c' to continue, anything else to quit- c
+You entered 'c'
+Enter 'y', 'Y', 'n', or 'N'- N
+You entered 'N'
+Choose a digit.
+Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'- 9
+You entered '9’
+
+    public static String getInput(String y){
+        int times=1;
+        while(times<=5){
+            while(input.equals("Y") || input.equals("y") || (input.equals("N") || input.equals("n"))){
+            
+            }
+            times++;
